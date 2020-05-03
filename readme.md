@@ -1,3 +1,14 @@
+# Super Stardew Valley Crop Planner
+
+A fork of the original [Stardew Valley Crop Planner](https://github.com/exnil/crop_planner)
+
+### What's New
+
+* work in progress...
+
+
+## Original README.MD
+
 # Stardew Valley Crop Planner
 
 A tool for planning crop schedules in the Stardew Valley game.
