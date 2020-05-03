@@ -6,8 +6,11 @@ A fork of the original [Stardew Valley Crop Planner](https://github.com/exnil/cr
 
 * work in progress...
 
+---
 
-## Original README.MD
+# Original README.MD
+
+---
 
 # Stardew Valley Crop Planner
 
