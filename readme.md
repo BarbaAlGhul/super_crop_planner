@@ -8,7 +8,7 @@ A fork of the original [Stardew Valley Crop Planner](https://github.com/exnil/cr
 
 ---
 
-# Original README.MD
+## Original README.MD
 
 ---
 
