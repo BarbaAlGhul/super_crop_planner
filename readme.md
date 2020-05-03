@@ -1,4 +1,4 @@
-# Super Stardew Valley Crop Planner
+# Super Stardew Valley Crop Planner Alpha
 
 A fork of the original [Stardew Valley Crop Planner](https://github.com/exnil/crop_planner)
 
