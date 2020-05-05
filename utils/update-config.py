@@ -9,7 +9,7 @@
 #	xcompress32.dll - proprietary, not included with XNBNode
 ################################
 
-import re, os, sys, shutil, json, subprocess, time
+import re, os, sys, shutil, json, subprocess, time, stat
 from os.path import getmtime
 from collections import OrderedDict
 
@@ -43,10 +43,10 @@ class Main:
 	xnbnode_repo = "https://github.com/draivin/XNBNode/"
 	
 	# Path variables
-	parentDirectory = os.path.abspath(os.path.join(os.getcwd()))
+	parentDirectory = os.path.abspath(os.path.join(os.getcwd())) #Create a parent directory for easier navigation
 	p = {}
 	config_path = os.path.join(parentDirectory, 'config.json')
-	temp_dir = "$HOME/.local/share/tmp/"
+	temp_dir = "tmp/"
 	data_dir = "/Content/Data/"
 	
 	# Crop data
@@ -94,9 +94,10 @@ class Main:
 			sys.exit(1)
 			
 		# Create dirs
-		os.makedirs("data", exist_ok=True)
-		os.makedirs(self.temp_dir, exist_ok=True)
-		os.makedirs(self.temp_dir + "sources", exist_ok=True)
+		# Changed the way the code handled directory creation to fix Linux systems path navigation problems
+		os.makedirs(os.path.join(self.parentDirectory, 'data'), exist_ok=True)
+		os.makedirs(os.path.join(self.parentDirectory, self.temp_dir), exist_ok=True)
+		os.makedirs(os.path.join(self.parentDirectory, self.temp_dir, 'sources'), exist_ok=True)
 		
 		paths_exist = True
 		
