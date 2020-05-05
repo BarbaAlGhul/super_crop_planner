@@ -43,7 +43,7 @@ class Main:
 	xnbnode_repo = "https://github.com/draivin/XNBNode/"
 	
 	# Path variables
-	parentDirectory = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+	parentDirectory = os.path.abspath(os.path.join(os.getcwd()))
 	p = {}
 	config_path = os.path.join(parentDirectory, 'config.json')
 	temp_dir = "$HOME/.local/share/tmp/"
