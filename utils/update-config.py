@@ -43,9 +43,10 @@ class Main:
 	xnbnode_repo = "https://github.com/draivin/XNBNode/"
 	
 	# Path variables
+	parentDirectory = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
 	p = {}
-	config_path = "../config.json"
-	temp_dir = "data/temp/"
+	config_path = os.path.join(parentDirectory, 'config.json')
+	temp_dir = "$HOME/.local/share/tmp/"
 	data_dir = "/Content/Data/"
 	
 	# Crop data
