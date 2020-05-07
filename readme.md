@@ -4,7 +4,13 @@ A fork of the original [Stardew Valley Crop Planner](https://github.com/exnil/cr
 
 ### What's New
 
-* work in progress...
+#### V1.0
+* Updated crops to version 1.4.5 of the game (added new Rice and Cactus crops)
+
+---
+
+### Knwon issues
+* The Rice Shoot appears as Unmilled Rice (since data is stracted directly from the game, this is how it comes)
 
 ---
 
