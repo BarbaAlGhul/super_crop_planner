@@ -96,7 +96,7 @@ class Main:
 		os.makedirs("data", exist_ok=True)
 		os.makedirs(self.temp_dir, exist_ok=True)
 		os.makedirs(self.temp_dir + "sources", exist_ok=True)
-		
+
 		paths_exist = True
 		
 		# Get / create settings file for this script
