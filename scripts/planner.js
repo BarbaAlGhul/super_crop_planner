@@ -1,7 +1,7 @@
 // CONSTANTS
 var SEASON_DAYS = 28;
 var YEAR_DAYS = SEASON_DAYS * 4;
-var VERSION = "3.0";
+var VERSION = "1.0";
 var DATA_VERSION = "3";
 
 
