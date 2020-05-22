@@ -1,7 +1,5 @@
 function correct_grow_time(crop_id, days, rate){
-    console.log(crop_id);
-    console.log("rate: "+ rate);
-    
+    //lookup table to manually correct wrong growth days on crops
     const cropsTable = {
         "amaranth": function(){
             return days;
