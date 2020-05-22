@@ -173,7 +173,7 @@
 			]
 		},
 		{
-			"buy": 30,
+			"buy": 2500,
 			"harvest": {
 				"extra_chance": 0.02,
 				"level_increase": 0,
