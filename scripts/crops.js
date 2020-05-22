@@ -26,9 +26,15 @@ function correct_grow_time(crop_id, days, rate){
             return days
         },
         "cauliflower": function(){
+            if (rate === 0.35) {
+                return days + 1;
+            }
             return days
         },
         "coffee_bean": function(){
+            if (rate === 0.1 || rate === 0.2) {
+                return days - 1;
+            }
             return days
         },
         "corn": function(){
@@ -50,6 +56,9 @@ function correct_grow_time(crop_id, days, rate){
             return days
         },
         "green_bean": function(){
+            if (rate === 0.1 || rate === 0.2) {
+                return days - 1;
+            }
             return days
         },
         "hops": function(){
@@ -74,7 +83,7 @@ function correct_grow_time(crop_id, days, rate){
             return days
         },
         "pumpkin": function(){
-            if (rate == 0.35) {
+            if (rate === 0.35) {
                 return days + 1;
             }
             return days
@@ -85,7 +94,7 @@ function correct_grow_time(crop_id, days, rate){
         "red_cabbage": function(){
             return days
         },
-        "rhubard": function(){
+        "rhubarb": function(){
             return days
         },
         "starfruit": function(){

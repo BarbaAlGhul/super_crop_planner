@@ -1343,7 +1343,7 @@ function planner_controller($scope){
 			
 			// Tiller profession (ID 1)
 			// [SOURCE: StardewValley/Object.cs : function sellToStorePrice]
-			if (planner.player.tiller && crop.id !== 'coffee_bean'){
+			if (planner.player.tiller && (crop.id !== 'coffee_bean')){
 				self.revenue.min = Math.floor(self.revenue.min * 1.1);
 				self.revenue.max = Math.floor(self.revenue.max * 1.1);
 			}
