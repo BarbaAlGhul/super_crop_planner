@@ -1460,6 +1460,8 @@ function planner_controller($scope){
 		for (var i = 0; i < stages.length; i++){
 			days += stages[i];
 		}
+
+		days = correct_grow_time(this.crop.id, days, rate);
 		
 		return days;
 	};
