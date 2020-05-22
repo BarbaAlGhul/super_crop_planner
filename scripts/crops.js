@@ -5,6 +5,9 @@ function correct_grow_time(crop_id, days, rate){
             return days;
         },
         "ancient_fruit": function(){
+            if (rate === 0.25 || rate === 0.2 || rate === 0.35) {
+                return days + 1;
+            }
             return days
         },
         "artichoke": function(){
@@ -128,6 +131,9 @@ function correct_grow_time(crop_id, days, rate){
             return days
         },
         "sweet_gem_berry": function(){
+            if (rate === 0.25 || rate === 0.35) {
+                return days + 1;
+            }
             return days
         },
         "tomato": function(){
