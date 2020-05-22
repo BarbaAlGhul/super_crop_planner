@@ -17,6 +17,9 @@ function correct_grow_time(crop_id, days, rate){
             return days
         },
         "blueberry": function(){
+            if (rate === 0.35) {
+                return days + 1;
+            }
             return days
         },
         "bok_choy": function(){
@@ -44,15 +47,24 @@ function correct_grow_time(crop_id, days, rate){
             return days
         },
         "eggplant": function(){
+            if (rate === 0.20) {
+                return days - 1;
+            }
             return days
         },
         "fairy_rose": function(){
+            if (rate === 0.35) {
+                return days + 1;
+            }
             return days
         },
         "garlic": function(){
             return days
         },
         "grape": function(){
+            if (rate === 0.1 || rate === 0.2) {
+                return days - 1;
+            }
             return days
         },
         "green_bean": function(){
@@ -65,12 +77,18 @@ function correct_grow_time(crop_id, days, rate){
             return days
         },
         "hot_pepper": function(){
+            if (rate === 0.2) {
+                return days - 1;
+            }
             return days
         },
         "kale": function(){
             return days
         },
         "melon": function(){
+            if (rate === 0.35) {
+                return days + 1;
+            }
             return days
         },
         "parsnip": function(){
@@ -125,6 +143,12 @@ function correct_grow_time(crop_id, days, rate){
             return days
         },
         "yam": function(){
+            if (rate === 0.1 || rate === 0.2) {
+                return days - 1;
+            }
+            if (rate === 0.35) {
+                return days + 1;
+            }
             return days
         },
         
