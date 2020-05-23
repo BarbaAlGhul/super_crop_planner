@@ -4,6 +4,9 @@ A fork of the original [Stardew Valley Crop Planner](https://github.com/exnil/cr
 
 ### What's New
 
+#### V1.0.1
+* Fixed reddit thread link
+
 #### V1.0
 * Updated crops to version 1.4.5 of the game (added new Rice and Cactus crops)
 * Fixed growth days of some crops
