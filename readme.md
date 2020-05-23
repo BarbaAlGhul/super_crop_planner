@@ -12,6 +12,7 @@ A fork of the original [Stardew Valley Crop Planner](https://github.com/exnil/cr
 ### Knwon issues
 * The Rice Shoot appears as Unmilled Rice (since data is stracted directly from the game, this is how it comes).
 * Unmilled Rice growth time is considered only when it is unirrigated. I didn't think on a solution for the irrigated case yet.
+* Cactus fruit shows as a normal crop but in the game can only be planted inside a greenhouse.
 
 ---
 
